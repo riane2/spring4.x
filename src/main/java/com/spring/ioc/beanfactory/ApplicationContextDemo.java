@@ -7,6 +7,7 @@ import org.springframework.beans.factory.config.InstantiationAwareBeanPostProces
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.nio.ByteBuffer;
 import java.util.Map;
 
 /**
@@ -39,6 +40,7 @@ public class ApplicationContextDemo {
             System.out.println(postProcessorEntry.getKey() + ": " + postProcessorEntry.getValue());
         }
 
+        ByteBuffer.allocate(1024);
 
     }
 
