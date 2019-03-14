@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<import resource="classpath*:"></import>
+    <bean name="hello" class="com.spring.ioc.beanfactory.bean.Car" autowire="byName" abstract="true" parent="environment">
+        <lookup-method name="getName" bean="name"></lookup-method>
+        <property name="">
+            <idref bean="environment"></idref>
+        </property>
+        <replaced-method></replaced-method>
+    </bean>-->
+    <bean class="com.spring.ioc.propertyeditor.bean.Owner" id="owner">
+        <property name="name" value="riane"></property>
+        <property name="dog" value="riane-dog,阿拉斯加"></property>
+    </bean>
+</beans>
