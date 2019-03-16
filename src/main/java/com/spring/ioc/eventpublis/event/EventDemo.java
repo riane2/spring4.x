@@ -1,6 +1,7 @@
 package com.spring.ioc.eventpublis.event;
 
 import org.springframework.context.ApplicationEvent;
+import org.springframework.stereotype.Component;
 
 import java.util.EventListener;
 import java.util.EventObject;
@@ -29,5 +30,13 @@ public class EventDemo extends ApplicationEvent {
 
     public void setValue(long value) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "EventDemo{" +
+                "value=" + value +
+                ", source=" + source +
+                '}';
     }
 }
