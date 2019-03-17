@@ -1,0 +1,4 @@
+advisor：切面=切点+增强
+有：静态切面，动态切点+defaultPointCuntAdvisor构成的动态切点，
+流程切点由DefaultPointCuntAdvisor+controlFlowPointCut,
+复合切面：ComposablePointCut+DefaultPointCuntAdvisor
